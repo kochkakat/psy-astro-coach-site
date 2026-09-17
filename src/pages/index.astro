@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Психолог • Астролог • Коуч">
+  <h1 class="text-4xl font-bold mb-4">Комплексная работа с запросами</h1>
+  <p class="text-lg text-gray-600 mb-8">
+    Психология, астрология и коучинг: помогаю разобраться с отношениями, деньгами, предназначением, здоровьем и детскими вопросами.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <article class="p-6 bg-white rounded shadow">
+      <h2 class="text-xl font-bold mb-2">Психология</h2>
+      <p class="text-gray-600">Работа с внутренними конфликтами, страхами, самооценкой и повторяющимися сценариями.</p>
+      <a href="/psychology" class="block mt-4 text-indigo-600 hover:underline">Подробнее →</a>
+    </article>
+
+    <article class="p-6 bg-white rounded shadow">
+      <h2 class="text-xl font-bold mb-2">Астрология</h2>
+      <p class="text-gray-600">Прогностика, хорарные вопросы, разбор натальной карты и астрологические консультации.</p>
+      <a href="/astrology" class="block mt-4 text-indigo-600 hover:underline">Подробнее →</a>
+    </article>
+
+    <article class="p-6 bg-white rounded shadow">
+      <h2 class="text-xl font-bold mb-2">Коучинг</h2>
+      <p class="text-gray-600">Поиск предназначения, постановка целей, работа с мотивацией и стратегиями развития.</p>
+      <a href="/coaching" class="block mt-4 text-indigo-600 hover:underline">Подробнее →</a>
+    </article>
+  </div>
+</BaseLayout>
