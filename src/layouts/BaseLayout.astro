@@ -1,0 +1,36 @@
+---
+const title = Astro.props.title || 'Психолог • Астролог • Коуч';
+---
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-6">
+        <a href="/" class="text-2xl font-bold text-indigo-600">
+          [ИМЯ ФАМИЛИЯ]
+        </a>
+        <nav class="mt-4 flex flex-col md:flex-row gap-4">
+          <a href="/psychology" class="hover:text-indigo-600">Психология</a>
+          <a href="/astrology" class="hover:text-indigo-600">Астрология</a>
+          <a href="/coaching" class="hover:text-indigo-600">Коучинг</a>
+          <a href="/combined" class="hover:text-indigo-600">Комплексно</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="bg-gray-100 py-8 mt-16 text-gray-600 text-center">
+      <p>© 2024 [ИМЯ ФАМИЛИЯ]. Все права защищены.</p>
+      <p class="mt-2">Контакты: email@example.com</p>
+    </footer>
+  </body>
+</html>
